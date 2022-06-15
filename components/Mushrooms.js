@@ -6,7 +6,7 @@ export default function createMushrooms(root) {
         container.innerHTML = '';
 
         for (const mushroom of mushrooms) {
-            const image = mushroom({ mushroom });
+            const image = Mushroom({ mushroom }); 
             container.append(image);
         }
 
