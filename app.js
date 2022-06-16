@@ -48,8 +48,9 @@ const Friends = createFriends(document.querySelector('#friends'), {
     handleFeedFriend: (friend) => {
         if (!state.mushrooms.length) {
             setMessage('no shrooms');
+
         }
-        if (friend.satisfied === 2) {
+        else if (friend.satisfied === 2) {
             setMessage('im full');
         }
         else {
@@ -78,6 +79,7 @@ const Friends = createFriends(document.querySelector('#friends'), {
         setMessage('thanks for free shrooms');
         // *** use removeFriend to remove this friend from state;
         display();
+
     },
 });
 
