@@ -53,7 +53,7 @@ const Friends = createFriends(document.querySelector('#friends'), {
             setMessage('im full');
         }
         else {
-            const mushroom = state.mushrooms[1];
+            const mushroom = state.mushrooms[0];
             friend.satisfied++;
             removeMushroom(mushroom);
             updateFriend(friend);
